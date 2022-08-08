@@ -1,3 +1,105 @@
+/*secondary text color #212121*/
+/*main text color #757575*/
+/*white #FFFFFF*/
+/*accent #2196F3*/
+/*main background color f5f5f5*/
+/*secondary background color #F5F4FA*/
+/*secondary background color #2F303A*/
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --text-white-color: #ffffff;
+  --primary-background-color: #f5f5f5;
+  --secondary-background-color: #2f303a;
+}
+
 body {
-    background-color: aqua;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+
+/*logo*/
+.logotype {
+  color: var(--accent-color);
+}
+header .logo {
+  color: #000000;
+}
+.footer .logo {
+  color: var(--text-white-color);
+}
+/*Navigation*/
+.nav-list .link {
+  color: var(--title-text-color);
+}
+.nav-list .link:hover,
+.nav-list .link:focus,
+.nav-list .current {
+  color: var(--accent-color);
+}
+.contacts-list .link {
+  color: var(--primary-text-color);
+}
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--accent-color);
+}
+/*main*/
+.hero {
+  background-color: var(--secondary-background-color);
+}
+.section.command {
+  background-color: #f5f4fa;
+}
+.hero-title {
+  color: var(--text-white-color);
+}
+.section-title {
+  color: var(--title-text-color);
+}
+.features-list .title {
+  color: var(--title-text-color);
+}
+.command-list .title {
+  color: var(--title-text-color);
+}
+/*button*/
+.button {
+  /* color: var(--text-white-color);
+  background-color: var(--accent-color);*/
+}
+.button.primary {
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  border-color: #f5f4fa;
+}
+.secondary:hover,
+.secondary:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.button.current {
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+/*footer*/
+.footer {
+  background-color: var(--secondary-background-color);
+}
+.contact-list .contact-item {
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-item.address {
+  color: var(--text-white-color);
 }
