@@ -38,10 +38,10 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-header .logo {
+.page-header .logo-part {
   color: #000000;
 }
-.footer .logo {
+.page-footer .logo-part {
   color: var(--text-white-color);
 }
 /*Navigation*/
@@ -73,7 +73,7 @@ header .logo {
 .hero {
   background-color: var(--secondary-background-color);
 }
-.section.command {
+.section.team {
   background-color: #f5f4fa;
 }
 .hero-title {
@@ -101,7 +101,7 @@ header .logo {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.command-list .title {
+.team-list .title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -143,15 +143,20 @@ header .logo {
   background-color: var(--accent-color);
 }
 /*footer*/
-.footer {
+.page-footer {
   background-color: var(--secondary-background-color);
 }
 .contact-list .contact-item {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
-.contact-item.address {
+.link.address {
   color: var(--text-white-color);
+  font-style: normal;
+}
+.contact-list .contact-item:hover,
+.contact-list .contact-item:focus {
+  color: var(--accent-color);
 }
 /*Портфоліо*/
 .works-list .title {
@@ -163,7 +168,6 @@ header .logo {
 }
 .works-list .text {
   color: var(--primary-text-color);
-
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
