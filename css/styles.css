@@ -1,21 +1,20 @@
-/*secondary text color #212121*/
-/*main text color #757575*/
-/*white #FFFFFF*/
-/*accent #2196F3*/
-/*main background color f5f5f5*/
-/*secondary background color #F5F4FA*/
-/*secondary background color #2F303A*/
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --text-white-color: #ffffff;
+  --text-black-color: #000000;
+  --contact-item-color: rgba(255, 255, 255, 0.6);
   --primary-background-color: #f5f5f5;
   --secondary-background-color: #2f303a;
+  --button-background-color: #f5f4fa;
+  --hero-button-active: #188ce8;
+  --white-background-color: #ffffff;
+  --bold-font: 700;
+  --font-size-sixteen: 16px;
 }
-
 body {
-  background-color: var(--primary-background-color);
+  background-color: var(--white-background-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -33,13 +32,12 @@ body {
 .logotype {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: var(--bold-font);
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 .page-header .logo-part {
-  color: #000000;
+  color: var(--text-black-color);
 }
 .page-footer .logo-part {
   color: var(--text-white-color);
@@ -48,7 +46,6 @@ body {
 .nav-list .link {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
 }
@@ -61,7 +58,6 @@ body {
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
 }
@@ -72,9 +68,6 @@ body {
 /*main*/
 .hero {
   background-color: var(--secondary-background-color);
-}
-.section.team {
-  background-color: #f5f4fa;
 }
 .hero-title {
   color: var(--text-white-color);
@@ -87,47 +80,74 @@ body {
 }
 .section-title {
   color: var(--title-text-color);
-  font-weight: 700;
+  font-weight: var(--bold-font);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .features-list .title {
   color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: var(--bold-font);
+  font-size: inherit;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.features,
+.what-do,
+.works {
+  background-color: var(--primary-background-color);
+}
+.section.team {
+  background-color: var(--button-background-color);
+}
+.team-item,
+.works-item {
+  background-color: var(--white-background-color);
 }
 .team-list .title {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--font-size-sixteen);
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .position {
-  font-size: 16px;
+  font-size: var(--font-size-sixteen);
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 /*button*/
 .button {
   color: var(--text-white-color);
   background-color: var(--accent-color);
   font-family: inherit;
+  font-weight: 500;
+  font-size: var(--font-size-sixteen);
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   cursor: pointer;
 }
 .hero-button {
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: var(--bold-font);
   line-height: 1.88;
-  text-align: center;
   letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-button-active);
 }
 .button.primary {
   color: var(--text-white-color);
@@ -135,11 +155,11 @@ body {
 }
 .button.secondary {
   color: var(--title-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--button-background-color);
 }
 .secondary:hover,
 .secondary:focus {
-  color: var(--white-color);
+  color: var(--text-white-color);
   background-color: var(--accent-color);
 }
 /*footer*/
@@ -147,7 +167,7 @@ body {
   background-color: var(--secondary-background-color);
 }
 .contact-list .contact-item {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contact-item-color);
   font-style: normal;
 }
 .link.address {
@@ -161,14 +181,13 @@ body {
 /*Портфоліо*/
 .works-list .title {
   color: var(--title-text-color);
-  font-weight: 700;
+  font-weight: var(--bold-font);
   font-size: 18px;
   line-height: 0.2;
   letter-spacing: 0.06em;
 }
 .works-list .text {
   color: var(--primary-text-color);
-  font-size: 16px;
+  font-size: var(--font-size-sixteen);
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
