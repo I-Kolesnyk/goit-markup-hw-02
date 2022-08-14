@@ -5,7 +5,6 @@
   --text-white-color: #ffffff;
   --text-black-color: #000000;
   --contact-item-color: rgba(255, 255, 255, 0.6);
-  --primary-background-color: #f5f5f5;
   --secondary-background-color: #2f303a;
   --button-background-color: #f5f4fa;
   --hero-button-active: #188ce8;
@@ -17,7 +16,6 @@ body {
   background-color: var(--white-background-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -46,7 +44,7 @@ body {
 .nav-list .link {
   color: var(--title-text-color);
   font-weight: 500;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .nav-list .link:hover,
@@ -58,7 +56,7 @@ body {
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .contacts-list .link:hover,
@@ -103,11 +101,6 @@ body {
   font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
-}
-.features,
-.what-do,
-.works {
-  background-color: var(--primary-background-color);
 }
 .section.team {
   background-color: var(--button-background-color);
